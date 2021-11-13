@@ -16,17 +16,18 @@ let userInfo = {
 
 getStorageInfo();
 
-
 function onFormSubmit(e) {
     e.preventDefault();
     e.currentTarget.reset();
     console.log('userInfo :>> ', userInfo);
     localStorage.removeItem(STORAGE_KEY);
 }
+
 function onEmailInput(e) {
     userInfo.email = e.target.value;
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(userInfo));
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(userInfo))
 }
+
 function onTextareaInput(e) {
     userInfo.message = e.target.value;
     localStorage.setItem(STORAGE_KEY, JSON.stringify(userInfo));
