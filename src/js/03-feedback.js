@@ -25,7 +25,7 @@ function onFormSubmit(e) {
 
 function onEmailInput(e) {
     userInfo.email = e.target.value;
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(userInfo))
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(userInfo));
 }
 
 function onTextareaInput(e) {
