@@ -4,4 +4,4 @@ var t=arguments[3],n="Expected a function",e=NaN,i="[object Symbol]",r=/^\s+|\s+
 },{}],"TTyb":[function(require,module,exports) {
 "use strict";var e=t(require("lodash.throttle"));function t(e){return e&&e.__esModule?e:{default:e}}const a=document.querySelector(".feedback-form"),r=document.querySelector("[name=email]"),n=document.querySelector("[name=message]"),l="feedback-form-state";a.addEventListener("submit",u),r.addEventListener("input",(0,e.default)(s,500)),n.addEventListener("input",(0,e.default)(c,500));let o={email:"",message:""};function u(e){e.preventDefault(),e.currentTarget.reset(),console.log("userInfo :>> ",o),localStorage.removeItem(l)}function s(e){o.email=e.target.value,localStorage.setItem(l,JSON.stringify(o))}function c(e){o.message=e.target.value,localStorage.setItem(l,JSON.stringify(o))}function i(){let e=localStorage.getItem(l);e&&(o=JSON.parse(e),r.value=o.email,n.value=o.message)}i();
 },{"lodash.throttle":"FNyO"}]},{},["TTyb"], null)
-//# sourceMappingURL=/parcel-project-template/03-feedback.acbf6b59.js.map
+//# sourceMappingURL=/goit-js-hw-08/03-feedback.acbf6b59.js.map
